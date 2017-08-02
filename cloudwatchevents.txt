@@ -1,0 +1,8 @@
+console.log('The function is loaded')
+
+exports.handler = function(event, context)
+{
+	console.log("Something Happened....wait ()");
+	console.log("The event:\n" + JSON.stringify(event, null, 4));
+	context.succeed("and ... ready!");
+};
